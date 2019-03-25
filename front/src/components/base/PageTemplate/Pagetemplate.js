@@ -8,17 +8,19 @@ const GlobalStyles = createGlobalStyle`
   body {
     @import url('https://fonts.googleapis.com/earlyaccess/hanna.css');
     font-family: 'Hanna', sans-serif;
-    background: linear-gradient(45deg, #e66465 30%, #9198e5 70%);
+    background: #6EC367
     background-repeat: no-repeat;
+    margin: 0px;
   }
 `
 
-const PageTemplate = ({ header, children }) => {
+const PageTemplate = ({ header, children, footer }) => {
   return (
     <div>
       <GlobalStyles/>
       {header}
       <main>{children}</main>
+      {footer}
     </div>
   );
 };

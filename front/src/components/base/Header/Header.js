@@ -26,7 +26,7 @@ const StyledTypography = styled(({marginTop, ...other}) => (
     font-family: 'Hanna', sans-serif;
     margin-top : ${props => props.marginTop};
     color : white;
-    font-size : 2rem;
+    font-size : 3rem;
   }
 `
 
