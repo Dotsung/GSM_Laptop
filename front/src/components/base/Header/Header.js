@@ -25,8 +25,18 @@ const StyledTypography = styled(({marginTop, ...other}) => (
     @import url('https://fonts.googleapis.com/earlyaccess/hanna.css');
     font-family: 'Hanna', sans-serif;
     margin-top : ${props => props.marginTop};
+    margin-left: 15px;
     color : white;
     font-size : 3rem;
+    && a:link{
+        color: white;; 
+        text-decoration: none;
+      }
+    && a:visited{
+        color: white;; 
+        text-decoration: none;
+      }
+    }
   }
 `
 
@@ -44,7 +54,7 @@ class Header extends Component {
           <StyledAppBar position="static" color="default">
             <Toolbar>
               <StyledTypography marginTop="25px" variant="h6" color="inherit">
-                노트북 대여 시스템
+                <a href="#">노트북 대여 시스템</a>
               </StyledTypography>
               <Grow/>
             </Toolbar>
