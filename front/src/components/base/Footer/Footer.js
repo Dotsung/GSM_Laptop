@@ -14,13 +14,14 @@ const StyledFooter = styled.footer`
     }
     p, a, li {
         color: #cdced0;
+		list-style: none;
     }
 `
 
 const Row = styled.div`
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 100px);
+	grid-template-rows: repeat(4, 100px);
 `
 
 const footerTheme = {

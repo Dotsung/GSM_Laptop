@@ -5,9 +5,9 @@ import styled from "styled-components";
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
-  body {
-    @import url('https://fonts.googleapis.com/earlyaccess/hanna.css');
-    font-family: 'Hanna', sans-serif;
+  body {@import url(
+    http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+    font-family: 'nanumgothic', sans-serif;
     background: #6EC367
     background-repeat: no-repeat;
     margin: 0px;
