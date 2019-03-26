@@ -1,12 +1,11 @@
 // @flow
 import React, { Component } from 'react';
 import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
 
 import styled from "styled-components";
 
 const Banner = styled.div`
-    text-align:center; 
+    text-align:center;
 `;
 
 const BannerCard = styled.div`
@@ -20,13 +19,30 @@ const BannerCard = styled.div`
     display: inline-block;
 `;
 
+const StyledButton = styled.button`
+  background-color: rgba(0,0,0,0);
+  color: white;
+  border: 1px solid #ffffff;
+  margin-bottom: 100px;
+  cursor: pointer;
+  ${this}:hover{
+    background-color: #E6E6E6;
+  }
+  h4 {
+    font-size : 2rem;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+`;
+
 const StyledTypography = styled(Typography)`
   && {
       color : white;
       text-align:center; 
       && h1{
         margin-top: 200px;
-        font-size : 10rem;
+        margin-bottom: 110px;
+        font-size : 15rem;
       }
       && h2 {
         margin-top: 200px;
@@ -34,7 +50,7 @@ const StyledTypography = styled(Typography)`
       }
       && h3 {
         font-size : 2rem;
-        margin-bottom : 300px;
+        margin-bottom : 80px;
       }
   }
 `
@@ -48,10 +64,12 @@ class LapTopCard extends Component {
             <Banner>
               <BannerCard>
                 <StyledTypography>
-                    <h2>아주 빠르게 자습신청하세요</h2>
+                    <h2>쉽고 빠르게 자습신청하세요</h2>
                     <h1>36</h1>
                     <h3>남은 좌석</h3>
                 </StyledTypography>
+                <StyledButton><h4>신청하기</h4></StyledButton>
+                <StyledButton><h4>목록 보기</h4></StyledButton>
               </BannerCard>
             </Banner>
           </div>
