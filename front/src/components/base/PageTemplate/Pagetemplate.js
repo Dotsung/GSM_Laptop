@@ -5,11 +5,10 @@ import styled from "styled-components";
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyles = createGlobalStyle`
-  body {@import url(
-    http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
-    font-family: 'nanumgothic', sans-serif;
-    background: #6EC367
+  body {
+    background-image: url(https://cdn.pixabay.com/photo/2016/06/25/12/52/laptop-1478822_960_720.jpg);
     background-repeat: no-repeat;
+    background-size: 100% 100%;
     margin: 0px;
   }
 `
